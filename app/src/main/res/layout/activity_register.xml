@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+<!--    layout utama    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bacground_topi"
+            android:orientation="vertical">
+        </LinearLayout>
+<!--        bagain teks Daftar Akun     -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Akun"
+            android:layout_gravity="center"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"/>
+
+<!--        nagian form     -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/box_input"
+                android:layout_marginTop="25dp"
+                android:hint="@string/prompt_email"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:elegantTextHeight="true"
+                android:padding="10dp"/>
+            <EditText
+
+                android:id="@+id/etPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/box_input"
+                android:layout_marginTop="25dp"
+                android:hint="@string/prompt_password"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:elegantTextHeight="true"
+                android:padding="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp">
+                <EditText
+                    android:id="@+id/etCode"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/box_input"
+                    android:hint="@string/unik_kode_angota"
+                    android:padding="6dp"
+                    android:inputType="text"
+                    android:elegantTextHeight="true"
+                    />
+                <CheckBox
+                    android:id="@+id/ckAdmin"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/sebagai_admin"
+                    android:paddingStart="10dp"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btDaftar"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Daftar Sekarang"
+                android:background="@drawable/box_input"/>
+
+            <Button
+                android:id="@+id/btKembali"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sudah Ada Akun"
+                android:background="@drawable/box_input"/>
+        </LinearLayout>
+
+<!--        layout bawah    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bacground_topi"
+                android:orientation="vertical"
+                android:rotation="180"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
